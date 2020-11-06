@@ -19,6 +19,7 @@ namespace RQEPruefung0611
         [When(@"you convert it from hex to int")]
         public void WhenYouConvertItFromHexToInt()
         {
+            num = num.Trim('"');
             ans = System.Convert.ToInt32(num, 16);
         }
 
